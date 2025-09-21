@@ -98,7 +98,7 @@ TreeNode * minimum(TreeNode * x){
 void removeNode(TreeMap * tree, TreeNode* node) {
     if(tree == NULL || node == NULL) return;
     //caso 1
-    if(node->parent == NULL && node->right == NULL){
+    if(node->left == NULL && node->right == NULL){
         if(node->parent == NULL){
             tree->root = NULL;
         }
